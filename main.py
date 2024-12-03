@@ -1,6 +1,8 @@
+import os
 import xml.etree.ElementTree as ET
 import xml.dom.minidom
 import clickhouse_connect
+from dotenv import load_dotenv
 
 
 class ClickHouseClient:
@@ -122,16 +124,19 @@ def save_schema_to_file(schema_element, filename):
 
 
 if __name__ == "__main__":
-    # Connection details
-    host = 'your_host'
-    port = 8123
-    database = 'your_database'
-    username = 'your_username'
-    password = 'your_password'
+    # Load environment variables
+    load_dotenv()
+
+    # Connection details from environment variables or defaults
+    host = os.getenv("CLICKHOUSE_HOST", "localhost")
+    port = int(os.getenv("CLICKHOUSE_PORT", 8123))
+    database = os.getenv("CLICKHOUSE_DATABASE", "default")
+    username = os.getenv("CLICKHOUSE_USERNAME", "default")
+    password = os.getenv("CLICKHOUSE_PASSWORD", "")
 
     # Schema and table details
-    schema_name = 'your_schema'
-    source_table = 'your_table'
+    schema_name = os.getenv("SCHEMA_NAME", "default_schema")
+    source_table = os.getenv("SOURCE_TABLE", "default_table")
 
     generate_schema(
         host=host,
