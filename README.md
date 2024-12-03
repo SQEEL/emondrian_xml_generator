@@ -1,6 +1,6 @@
 # eMondrian XML Generator
 
-`eMondrian XML Generator` — это инструмент для автоматического создания XML-схем для работы с [eMondrian](https://github.com/pentaho/mondrian), использующий данные из ClickHouse.
+`eMondrian XML Generator` — это инструмент для автоматического создания XML-схем для работы с [eMondrian](https://github.com/SergeiSemenkov/eMondrian.git), использующий данные из ClickHouse.
 
 ## 📖 Описание
 
