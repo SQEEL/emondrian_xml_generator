@@ -50,4 +50,29 @@
 3. Запустите генерацию:
    ```bash
    python main.py
+После выполнения скрипт создаёт:
 
+- ### 📂 XML-файл
+   Файл будет сохранён в текущей рабочей директории с именем, соответствующим таблице.
+   Пример: dm_apt_data.xml
+
+- ### 🖥️ Вывод в консоль
+   Сгенерированный XML также выводится в консоль для быстрой проверки результата.
+
+---
+
+## 📄 Формат XML-файла
+Пример сгенерированного XML:
+
+```xml
+<Schema name="your_schema_name">
+    <Cube name="your_cube_name">
+        <Table name="your_table_name"/>
+        <Dimension name="Column1">
+            <Hierarchy hasAll="true" allMemberName="All Column1">
+                <Level name="Column1" column="column1" uniqueMembers="true"/>
+            </Hierarchy>
+        </Dimension>
+        <Measure name="N_Column" column="n_column" aggregator="sum" formatString="#,###.00"/>
+    </Cube>
+</Schema>
