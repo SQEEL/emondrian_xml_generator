@@ -76,3 +76,8 @@
         <Measure name="N_Column" column="n_column" aggregator="sum" formatString="#,###.00"/>
     </Cube>
 </Schema>
+
+---
+
+## 📜 Лицензия
+Этот проект распространяется под лицензией [MIT](https://github.com/SQEEL/emondrian_xml_generator/blob/main/LICENSE.md).
