@@ -27,7 +27,7 @@
 1. Убедитесь, что у вас установлен Python версии 3.7 или выше.
 2. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/your-username/emondrian_xml_generator.git
+   git clone https://github.com/SQEEL/emondrian_xml_generator.git
    cd emondrian_xml_generator
 
 ---
