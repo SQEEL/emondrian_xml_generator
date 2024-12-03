@@ -29,4 +29,3 @@
    ```bash
    git clone https://github.com/your-username/emondrian_xml_generator.git
    cd emondrian_xml_generator
-  ```
