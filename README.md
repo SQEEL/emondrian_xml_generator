@@ -35,12 +35,12 @@
 ## ⚙️ Конфигурация
 Параметры подключения можно передавать через переменные окружения или задавать в коде:
 
-host: Адрес ClickHouse (например, localhost).
-port: Порт ClickHouse (по умолчанию 8123).
-database: Имя базы данных.
-username: Имя пользователя.
-password: Пароль.
-source_table: Имя таблицы.
+- host: Адрес ClickHouse (например, localhost).
+- port: Порт ClickHouse (по умолчанию 8123).
+- database: Имя базы данных.
+- username: Имя пользователя.
+- password: Пароль.
+- source_table: Имя таблицы.
 
 ---
 
