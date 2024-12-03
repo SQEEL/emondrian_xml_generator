@@ -76,7 +76,7 @@
         <Measure name="N_Column" column="n_column" aggregator="sum" formatString="#,###.00"/>
     </Cube>
 </Schema>
-
+```
 ---
 
 ## 📜 Лицензия
